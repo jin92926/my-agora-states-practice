@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App'
 
+//스크립트를 변경해서 통과 못하게 만들기!
+
 describe('test입니다', () => {
     test('2+2는 4', () => {
         expect(2 + 2).toBe(4);
@@ -14,8 +16,8 @@ describe('test입니다', () => {
         screen.getByText(/My agora States/i);
     })
 
-    test('제목은 My agora States이어야 한다', () => {
-    render(<App />);
-    screen.getByText(/My agora States1/i);
-    });
+    // test('제목은 My agora States이어야 한다', () => {
+    // render(<App />);
+    // screen.getByText(/My agora States1/i);
+    // });
 })
