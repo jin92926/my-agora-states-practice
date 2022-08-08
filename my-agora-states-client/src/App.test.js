@@ -12,12 +12,10 @@ describe('test입니다', () => {
         render(<App />);
         //단순히 가지고 있는 텍스트로 dom에 접근하는 방식인 getByText을 사용
         screen.getByText(/My agora States/i);
-   
     })
 
     test('제목은 My agora States이어야 한다', () => {
     render(<App />);
     screen.getByText(/My agora States1/i);
-   
     });
 })
